@@ -1,6 +1,0 @@
-streamlit
-pandas
-numpy
-tensorflow
-base64
-pickle
