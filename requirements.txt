@@ -1,6 +1,5 @@
-streamlit
-pandas
-numpy
-tensorflow
-base64
-pickle
+streamlit==1.26.0
+pandas==2.0.3
+numpy==1.24.4
+tensorflow==2.12.0
+scikit-learn==1.3.0
