@@ -29,15 +29,15 @@ def load_pickle_model(model_path):
         return pickle.load(file)
 
 # Set background image (Ensure correct path with extension)
-set_image_local(r"E:\Project1\final_project\gears")
+set_image_local(r"gears")
 
 # Load Models
 try:
-    machining_finalized_h5 = tf.keras.models.load_model(r"E:\Project1\final_project\machining_finalized.h5")
-    passed_visual_inspection_h5 = tf.keras.models.load_model(r"E:\Project1\final_project\passed_visual_inspection.h5")
-    tool_condition_h5 = tf.keras.models.load_model(r"E:\Project1\final_project\tool_condition.h5")
-    encoder = load_pickle_model(r"E:\Project1\final_project\encoder.pkl")
-    scaler = load_pickle_model(r"E:\Project1\final_project\scaler.pkl")
+    machining_finalized_h5 = tf.keras.models.load_model(r"machining_finalized.h5")
+    passed_visual_inspection_h5 = tf.keras.models.load_model(r"passed_visual_inspection.h5")
+    tool_condition_h5 = tf.keras.models.load_model(r"tool_condition.h5")
+    encoder = load_pickle_model(r"encoder.pkl")
+    scaler = load_pickle_model(r"scaler.pkl")
 except Exception as e:
     st.error(f"Error loading models: {e}")
     st.stop()
